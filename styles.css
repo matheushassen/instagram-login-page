@@ -1,0 +1,198 @@
+:root {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fafafa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    gap: 3rem;
+}
+
+.wrapper {
+    display: flex; 
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+.phone-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30rem;
+}
+
+.phone-img img {
+    width: 70rem;
+}
+
+.login-area {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 18rem;
+    width: 34.8rem;
+    height: 39.5rem;
+}
+
+.user-credentials {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+  
+    border: 0.1rem solid #dbdbdb;
+    background-color: #ffffff;
+}
+
+.user-credentials #logo {
+    margin-top: 4.5rem;
+    margin-bottom: 3.6rem;
+    width: 17.5rem; 
+}
+
+.user-credentials input {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 3.6rem;
+    width: 26.7rem;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 0.2rem;
+    margin-bottom: 0.6rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    line-height: 3.6rem;
+    color: #8E8E8E;
+}
+
+.user-credentials button {
+    height: 3rem;
+    width: 26.7rem;
+    background-color: #b2dffd;
+    border: none;
+    border-radius: 0.2rem;
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: bold;
+}
+
+.facebook-login a{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
+    color: #385185;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: bold;
+}
+
+.facebook-login img {
+    width: 1.5rem;
+}
+
+#forgot-password {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    color: #00376B;
+    margin-bottom: 2rem;
+}
+
+.sign-up {
+    text-align: center;
+    border: .1rem solid #dbdbdb;
+    background-color: #ffffff;
+    padding: 2.5rem 0;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+
+.sign-up a {
+    color: #0095F6;
+    font-weight: bold;
+}
+
+.get-app {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+   text-align: center;
+}
+
+.get-app img {
+    width: 13.5rem;
+}
+
+footer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 94.8rem;
+    height: 100%;
+    font-size: 1.2rem;
+    color: #8E8E8E;
+}
+
+footer .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+footer a {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: 1rem;
+    line-height: 1.6rem;
+    color: #8E8E8E;
+}
+
+footer p {
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    body{
+       
+    }
+
+    .login-area {
+        margin-top: 16.6rem;
+    }
+
+    .wrapper {
+        display: flex; 
+        height: calc(100vh + 16.6rem);
+        align-items: center;
+        justify-content: center;
+        overflow:hidden
+    }
+
+    .phone-img {
+        display: none;
+    }
+
+    footer {
+        width: 74.8rem;
+    }
+}
